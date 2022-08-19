@@ -1,0 +1,548 @@
+openapi: 3.0.1
+info:
+  title: /InventoryLogistics/GlobalInventoryVisibility/{franchisee}/InventoryExport/Update
+  description: ""
+  version: "1.0"
+servers:
+  - url: https://{endpointurl}
+paths:
+  /:
+    post:
+      summary: Update
+      description: Update
+      operationId: update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InventoryExportUpdateEvent"
+            example:
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.8770000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 0
+                  stockInPicking: 0
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.8930000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 9999
+                  stockInPicking: 10000
+                  bufferStock: -1
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.9070000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 0
+                  stockInPicking: 0
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.9230000+00:00"
+                  itemType: ART
+                  businessUnitCode: "00222"
+                  businessUnitType: STO
+                  sellableStock: 9946
+                  stockInPicking: 9946
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.9370000+00:00"
+                  itemType: ART
+                  businessUnitCode: "00222"
+                  businessUnitType: STO
+                  sellableStock: 0
+                  stockInPicking: 0
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "10091764"
+                  lastModified: "2022-08-05T13:36:01.0000000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 26783
+                  stockInPicking: 10936
+                  bufferStock: 15847
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "20322472"
+                  lastModified: "2022-08-05T13:36:01.0970000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 31237
+                  stockInPicking: 11244
+                  bufferStock: 19993
+                  inTransit: 0
+                  quantityReserved: 0
+      responses:
+        "202":
+          description: ""
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LogicAppEventOperationSpanIdResponse"
+              example:
+                spanId: 08585417361654532391188016959CU00
+  /mock:
+    post:
+      summary: Update (Mock)
+      description: Update
+      operationId: updatemock
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InventoryExportUpdateEvent"
+            example:
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.8770000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 0
+                  stockInPicking: 0
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.8930000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 9999
+                  stockInPicking: 10000
+                  bufferStock: -1
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.9070000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 0
+                  stockInPicking: 0
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.9230000+00:00"
+                  itemType: ART
+                  businessUnitCode: "00222"
+                  businessUnitType: STO
+                  sellableStock: 9946
+                  stockInPicking: 9946
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "00184042"
+                  lastModified: "2022-08-05T13:36:00.9370000+00:00"
+                  itemType: ART
+                  businessUnitCode: "00222"
+                  businessUnitType: STO
+                  sellableStock: 0
+                  stockInPicking: 0
+                  bufferStock: 0
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "10091764"
+                  lastModified: "2022-08-05T13:36:01.0000000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 26783
+                  stockInPicking: 10936
+                  bufferStock: 15847
+                  inTransit: 0
+                  quantityReserved: 0
+              - subject: public
+                contentSource: ikano.sg/bc.14/inventory
+                dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+                dataVersion: "1.0"
+                metadataVersion: "1.0"
+                traceId: "1970"
+                data:
+                  id: "20322472"
+                  lastModified: "2022-08-05T13:36:01.0970000+00:00"
+                  itemType: ART
+                  businessUnitCode: "001"
+                  businessUnitType: STO
+                  sellableStock: 31237
+                  stockInPicking: 11244
+                  bufferStock: 19993
+                  inTransit: 0
+                  quantityReserved: 0
+      responses:
+        "202":
+          description: ""
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LogicAppEventOperationSpanIdResponse"
+              example:
+                spanId: 08585417361654532391188016959CU00
+components:
+  schemas:
+    InventoryExportUpdateEvent:
+      type: array
+      items:
+        required:
+          - subject
+          - contentSource
+          - dataSchema
+          - dataVersion
+          - metadataVersion
+          - traceId
+          - data
+        type: object
+        properties:
+          subject:
+            title: Subject
+            minLength: 1
+            type: string
+            description: "Sets the subject of the event, used for further filtering on subscribers."
+          contentSource:
+            title: Content Source
+            minLength: 4
+            type: string
+            description: "A unique system identifier, composed of retailer, retail unit, system, version and component/subsystem. See https://bit.ly/rpic-naming for more information."
+          dataSchema:
+            title: Data Schema
+            pattern: 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)'
+            type: string
+            description: The URL of the schema of the containing data of the event.
+          dataVersion:
+            title: Data Version
+            minLength: 1
+            pattern: '^[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)$'
+            type: string
+            description: The numeric version of the data schema.
+          metadataVersion:
+            title: Metadata Version
+            minLength: 1
+            pattern: '^[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)$'
+            type: string
+            description: The numeric version of the event schema.
+          traceId:
+            title: TraceId
+            minLength: 1
+            type: string
+            description: Tracks the long running workflow or integration event message chain.
+            default: ""
+          spanId:
+            title: SpanId
+            type: string
+            description: Tracks the event or message execution.
+            default: ""
+          data:
+            required:
+              - id
+              - itemType
+              - lastModified
+              - businessUnitCode
+              - businessUnitType
+              - stockInPicking
+              - sellableStock
+              - bufferStock
+              - inTransit
+              - quantityReserved
+            type: object
+            properties:
+              id:
+                title: Item No.
+                maxLength: 20
+                minLength: 1
+                type: string
+                default: 00000000-0000-0000-0000-000000000000
+              itemType:
+                title: Item Type
+                maxLength: 3
+                minLength: 3
+                type: string
+              lastModified:
+                title: Last Modified
+                pattern: '^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)((-(\d{2}):(\d{2})|Z)?)$'
+                type: string
+                description: Last modified date in UTC ISO8601 format.
+                default: "2022-01-01T00:00:00Z"
+              businessUnitCode:
+                title: Business Unit Code
+                maxLength: 10
+                minLength: 1
+                type: string
+                description: The bhsiness unit location identifier code.
+              businessUnitType:
+                title: Business Unit Type
+                maxLength: 3
+                minLength: 3
+                type: string
+                default: STO
+              sellableStock:
+                title: Sellable Stock
+                type: number
+                description: The sellable stock number.
+                default: 0
+              stockInPicking:
+                title: Stock In Picking
+                type: number
+                description: Stock currently in picking.
+                default: 0
+              quantityReserved:
+                title: Qty. Reserved Not In Stock
+                type: number
+                description: Quantity reserved that is currently not in stock.
+                default: 0
+              bufferStock:
+                title: Buffer Stock
+                type: number
+                description: The number of items in buffer stock.
+                default: 0
+              inTransit:
+                title: In Transit
+                type: number
+                description: ""
+                default: 0
+            additionalProperties: false
+        additionalProperties: false
+      example:
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "00184042"
+            lastModified: "2022-08-05T13:36:00.877Z"
+            itemType: ART
+            businessUnitCode: "001"
+            businessUnitType: STO
+            sellableStock: 0
+            stockInPicking: 0
+            bufferStock: 0
+            inTransit: 0
+            quantityReserved: 0
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "00184042"
+            lastModified: "2022-08-05T13:36:00.893Z"
+            itemType: ART
+            businessUnitCode: "001"
+            businessUnitType: STO
+            sellableStock: 9999
+            stockInPicking: 10000
+            bufferStock: -1
+            inTransit: 0
+            quantityReserved: 0
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "00184042"
+            lastModified: "2022-08-05T13:36:00.907Z"
+            itemType: ART
+            businessUnitCode: "001"
+            businessUnitType: STO
+            sellableStock: 0
+            stockInPicking: 0
+            bufferStock: 0
+            inTransit: 0
+            quantityReserved: 0
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "00184042"
+            lastModified: "2022-08-05T13:36:00.923Z"
+            itemType: ART
+            businessUnitCode: "00222"
+            businessUnitType: STO
+            sellableStock: 9946
+            stockInPicking: 9946
+            bufferStock: 0
+            inTransit: 0
+            quantityReserved: 0
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "00184042"
+            lastModified: "2022-08-05T13:36:00.937Z"
+            itemType: ART
+            businessUnitCode: "00222"
+            businessUnitType: STO
+            sellableStock: 0
+            stockInPicking: 0
+            bufferStock: 0
+            inTransit: 0
+            quantityReserved: 0
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "10091764"
+            lastModified: "2022-08-05T13:36:01Z"
+            itemType: ART
+            businessUnitCode: "001"
+            businessUnitType: STO
+            sellableStock: 26783
+            stockInPicking: 10936
+            bufferStock: 15847
+            inTransit: 0
+            quantityReserved: 0
+        - subject: public
+          contentSource: ikano.sg/bc.14/inventory
+          dataSchema: https://github.com/inter-ikea/cbf-ross-rpic-bc-inventoryexport/blob/main/Schemas/invexp.update.input.v1.schema.json
+          dataVersion: "1.0"
+          metadataVersion: "1.0"
+          traceId: "1970"
+          data:
+            id: "20322472"
+            lastModified: "2022-08-05T13:36:01.097Z"
+            itemType: ART
+            businessUnitCode: "001"
+            businessUnitType: STO
+            sellableStock: 31237
+            stockInPicking: 11244
+            bufferStock: 19993
+            inTransit: 0
+            quantityReserved: 0
+    LogicAppEventOperationSpanIdResponse:
+      type: object
+      properties:
+        spanId:
+          type: string
+      example:
+        spanId: 08585417361654532391188016959CU00
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      name: Ocp-Apim-Subscription-Key
+      in: header
+    apiKeyQuery:
+      type: apiKey
+      name: subscription-key
+      in: query
+security:
+  - apiKeyHeader: []
+  - apiKeyQuery: []
