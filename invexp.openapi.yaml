@@ -4,7 +4,7 @@ info:
   description: ""
   version: "1.0"
 servers:
-  - url: https://{endpointurl}
+  - url: http://petstore.swagger.io/v1
 paths:
   /:
     post:
